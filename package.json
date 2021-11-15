@@ -1,0 +1,42 @@
+{
+  "name": "clsx3",
+  "version": "0.0.8",
+  "source": "index.js",
+  "main": "dist/clsx3.js",
+  "module": "dist/clsx3.module.js",
+  "unpkg": "dist/clsx3.umd.js",
+  "esmodule": "./dist/clsx3.modern.js",
+  "exports": {
+    ".": {
+      "browser": "./dist/clsx3.modern.js",
+      "import": "./dist/clsx3.module.js",
+      "require": "./dist/clsx3.js",
+      "umd": "./dist/clsx3.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "build": "microbundle-crl -o dist/ --no-compress --sourcemap false",
+    "watch": "microbundle-crl watch -o dist/ --no-compress --sourcemap false"
+  },
+  "keywords": [
+    "classnames",
+    "classname",
+    "clsx",
+    "dedupe"
+  ],
+  "dependencies": {
+    "clsx": "^1.1.1"
+  },
+  "devDependencies": {
+    "microbundle-crl": "^0.13.11"
+  },
+  "author": "sam bacha",
+  "license": "ISC",
+  "description": ""
+}
